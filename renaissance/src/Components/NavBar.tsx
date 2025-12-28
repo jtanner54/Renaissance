@@ -10,7 +10,7 @@ export default function NavBar() {
     const location = usePathname();
 
     return (
-        <header className="fixed flex justify-center pointer-events-none top-4 left-0 right-0">
+        <header className="z-10 fixed flex justify-center pointer-events-none top-4 left-0 right-0">
             <nav className="pointer-events-auto overflow-hidden max-w-[95vw]">
                 <ul className="flex p-3 dark:bg-black border border-white/7 rounded-full gap-3 overflow-x-auto scrollbar-hide">
                     <li>
