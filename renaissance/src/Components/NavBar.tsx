@@ -7,7 +7,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaWrench } from "react-icons/fa";
 
 export default function NavBar() {
-    const location = usePathname();
+    const pathname = usePathname();
 
     return (
         <header className="z-10 fixed flex justify-center pointer-events-none top-4 left-0 right-0">
@@ -16,15 +16,15 @@ export default function NavBar() {
                     <li>
                         <Link
                         href="/"
-                        className={`flex p-2.5 gap-2.5 justify-center items-center border border-white/7 rounded-full ${location == '/' ? 'bg-white/24' : 'bg-zinc-100/5'}`}>
-                            <IoHomeOutline className="size-4.5"/>
+                        className={`flex p-2.5 gap-1  items-center border border-white/7 rounded-full ${pathname == '/' ? 'bg-white/24' : 'bg-zinc-100/5'}`}>
+                            <IoHomeOutline className="size-4.5 mb-1"/>
                             Home
                         </Link>
                     </li>
                     <li>
                         <Link
                         href="/About"
-                        className={`flex p-2.5 gap-2.5 justify-center items-center border border-white/7 rounded-full ${location == '/About' ? 'bg-white/24' : 'bg-zinc-100/5'}`}>
+                        className={`flex p-2.5 gap-1 justify-center items-center border border-white/7 rounded-full ${pathname == '/About' ? 'bg-white/24' : 'bg-zinc-100/5'}`}>
                             <IoIosInformationCircleOutline className="size-4.5"/>
                             About
                         </Link>
@@ -32,7 +32,7 @@ export default function NavBar() {
                     <li>
                         <Link
                         href="/Tech"
-                        className={`flex p-2.5 gap-2.5 justify-center items-center border border-white/7 rounded-full ${location == '/Tech' ? 'bg-white/24' : 'bg-zinc-100/5'}`}>
+                        className={`flex p-2.5 gap-1.5 justify-center items-center border border-white/7 rounded-full ${pathname == '/Tech' ? 'bg-white/24' : 'bg-zinc-100/5'}`}>
                             <FaWrench className="size-4.5"/>
                             Tech
                         </Link>
