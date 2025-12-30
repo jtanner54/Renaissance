@@ -5,12 +5,15 @@ import Typewriter from "typewriter-effect";
 import BoxesHome from "../Components/BoxesHome";
 import { BiCodeAlt } from "react-icons/bi";
 import { IoSparklesOutline } from "react-icons/io5";
+import { MdOutlineRocketLaunch } from "react-icons/md";
+import { FaGithub } from "react-icons/fa6";
+import Box from "../Components/BoxesAbout";
 
 export default function Page() {
     return (
         <div>
-            <section className="py-20 px-5 h-[110vh]">
-                <div className="absolute inset-0 h-[110vh] w-full bg-[radial-gradient(circle,#73737350_1px,transparent_1px)] bg-size-[30px_30px] sm:bg-size-[40px_40px]">
+            <section className="py-20 px-5 h-screen">
+                <div className="absolute inset-0 h-screen w-full bg-[radial-gradient(circle,#73737350_1px,transparent_1px)] bg-size-[30px_30px] sm:bg-size-[40px_40px]">
                     <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_40%] from-transparent to-black to-100% sm:to-110%" />
                 </div>
 
@@ -46,14 +49,21 @@ export default function Page() {
                             </Link>
                         </div>
 
-                        <div className="w-full h-px border-t border-white/5" />
+                        <div className="w-full h-px border-t border-white/5 pb-15" />
 
                         <div className="flex flex-col md:flex-row items-center text-center gap-20">
-                            <BoxesHome icon={<BiCodeAlt />} m_text="20+" l_text="technologies known"/>
+                            <BoxesHome icon={BiCodeAlt} m_text="20+" l_text="technologies known" />
+                            <BoxesHome icon={IoSparklesOutline} m_text="4+" l_text="Years of Experience" />
+                            <BoxesHome icon={MdOutlineRocketLaunch} m_text="12+" l_text="completed projects" />
+                            <BoxesHome icon={FaGithub} m_text="13+" l_text="repositories" />
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
+            <section className="dark:bg-black">
+                <div className="w-full h-px border-t border-white/5 pb-15" />
+
+            </section>
         </div >
     );
 }
