@@ -1,4 +1,4 @@
-import Box from "@/src/Components/Boxes";
+import Box from "@/src/Components/BoxesAbout";
 
 export default function Page() {
     return (
@@ -9,7 +9,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center w-full pt-40 dark:bg-white">
-                    <p className="z-10 font-sans font-stretch-expanded text-orange-400 pt-30 pb-12 uppercase slashed-zero">00 — Identity</p>
+                    <p className="z-10 font-sans font-stretch-expanded text-orange-400 pt-30 pb-12 uppercase tracking-wider">00 — Identity</p>
                     <h1 className="z-10 font-light text-6xl md:text-9xl sm:text-7xl">Who Am
                         <span className="font-serif italic opacity-50"> I?</span>
                     </h1>
@@ -20,7 +20,7 @@ export default function Page() {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-8 items-start">
                         <div className="">
-                            <p className="z-10 pl-1.5 pb-9 font-sans font-stretch-expanded text-orange-400 uppercase">01 — Philosophy</p>
+                            <p className="z-10 pl-1.5 pb-9 font-sans font-stretch-expanded text-orange-400 uppercase tracking-wider">01 — Philosophy</p>
                             <h1 className="wrap-break-word font-light text-4xl md:text-7xl sm:text-5xl pb-9">Engineering
                                 <span className="text-4xl md:text-7xl sm:text-5xl font-serif italic opacity-50"> Understanding.</span>
                             </h1>
@@ -41,12 +41,12 @@ export default function Page() {
             </section>
 
             <section className="dark:bg-black py-30 px-6">
-                <div className="max-w-5xl mx-auto">
+                <div className="max-w-5xl mx-auto items-center text-center">
                     <div className="items-center text-center">
-                        <p className="font-sans font-stretch-expanded pb-10 text-orange-400 uppercase slashed-zero">02 — Chronology</p>
+                        <p className="font-sans font-stretch-expanded pb-10 text-orange-400 uppercase tracking-wider">02 — Chronology</p>
                         <h1 className="font-serif pb-30 text-4xl sm:text-6xl md:text-8xl italic">The Path</h1>
                     </div>
-                    <div className="flex flex-col md:flex-row mb-50 gap-12 items-center">
+                    <div className="flex flex-col md:flex-row mb-5 sm:mb-50 gap-12 items-center">
                         <div className="flex-1 ">
                             <h1 className="text-7xl md:text-[12rem] italic font-serif">2022</h1>
                             <h3 className="text-4xl md:text-5xl font-serif italic opacity-50">The Spark</h3>
@@ -55,15 +55,15 @@ export default function Page() {
                         <div className="w-px h-45 bg-linear-to-b from-orange-400 to-transparent hidden md:block" />
                         <div className="flex-1" />
                     </div>
-                    <div className="flex flex-col md:flex-row mb-50 gap-12 items-center">
+                    <div className="flex flex-col md:flex-row mb-5 sm:mb-50 gap-12 items-center">
                         <div className="flex-1" />
                         <div className="w-px h-45 bg-linear-to-b from-orange-400 to-transparent hidden md:block" />
                         <div className="flex-1">
                             <h1 className="text-7xl md:text-[12rem] italic font-serif">2024</h1>
-                            <h3 className="text-4xl md:text-5xl font-serif italic opacity-50">Rose-Hulman</h3>
+                            <h3 className="text-4xl md:text-5xl font-serif italic opacity-50 pb-20">Rose-Hulman</h3>
                         </div>
                     </div>
-                    <div className="flex flex-col md:flex-row mb-65 gap-12 items-center">
+                    <div className="flex flex-col md:flex-row mb-5 sm:mb-65 gap-12 items-center">
                         <div className="flex-1 ">
                             <h1 className="text-7xl md:text-[12rem] italic font-serif">2025</h1>
                             <h3 className="text-4xl md:text-5xl font-serif italic opacity-50">Joined Purrquinox</h3>
@@ -77,7 +77,7 @@ export default function Page() {
             <section className="dark:bg-black py-10 px-6">
                 <div className="mx-auto max-w-7xl">
                     <div className="flex flex-col mb-12 items-centerjustify-between">
-                        <p className="font-sans font-stretch-expanded pb-7 text-orange-400 uppercase slashed-zero">03 — Recreation</p>
+                        <p className="font-sans font-stretch-expanded pb-7 text-orange-400 uppercase tracking-wider">03 — Recreation</p>
                         <h1 className="font-serif text-4xl pb-4 md:text-6xl sm:text-5xl">Cinematic
                             <span className="italic pb-12 opacity-50"> Influence.</span>
                         </h1>
@@ -87,21 +87,21 @@ export default function Page() {
                                     The shows/movies that moved me and shaped my personality.
                                 </p>
                             </div>
-                            <div className="ml-auto">
+                            <div className="md:ml-auto">
                                 <p className="text-sm font-sans uppercase opacity-50">9 curated masterpieces</p>
                             </div>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        <Box bg="red-700/85" name="Silicon Valley" genre="sitcom | comedy" rating={8} />
-                        <Box bg="orange-200/50" name="The Office" genre="sitcom | comedy" rating={9} />
-                        <Box bg="pink-500" name="Fight Club" genre="thriller | action" rating={12} />
-                        <Box bg="fuchsia-700" name="La La Land" genre="romance | musical" rating={10} />
-                        <Box bg="amber-600" name="Seven Deadly Sins" genre="anime | fantasy" rating={8} />
-                        <Box bg="yellow-300/80" name="The Treasure of Foggy Mountain" genre="comedy | adventure" rating={6} />
-                        <Box bg="[#00AEEF]" name="Nightcrawler" genre="thriller | crime" rating={11} />
-                        <Box bg="emerald-500" name="Shameless" genre="dramedy" rating={10} />
-                        <Box bg="zinc-100/5" name="Batman Beyond" genre="superhero | action" rating={9} />
+                        <Box bg="#b91c1cD9" name="Silicon Valley" genre="sitcom | comedy" rating={8} />
+                        <Box bg="#fed7aa80" name="The Office" genre="sitcom | comedy" rating={9} />
+                        <Box bg="#ec4899ff" name="Fight Club" genre="thriller | action" rating={12} />
+                        <Box bg="#a21cafff" name="La La Land" genre="romance | musical" rating={10} />
+                        <Box bg="#d97706ff" name="Seven Deadly Sins" genre="anime | fantasy" rating={8} />
+                        <Box bg="#fde047cc" name="The Treasure of Foggy Mountain" genre="comedy | adventure" rating={6} />
+                        <Box bg="00AEEFFF" name="Nightcrawler" genre="thriller | crime" rating={11} />
+                        <Box bg="#10b981ff" name="Shameless" genre="dramedy" rating={10} />
+                        <Box bg="#f4f4f50d" name="Batman Beyond" genre="superhero | action" rating={9} />
                     </div>
                 </div>
             </section>
