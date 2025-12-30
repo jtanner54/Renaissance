@@ -1,9 +1,9 @@
-import { FaTv, FaAngleUp} from "react-icons/fa";
+import Box from "@/src/Components/Boxes";
 
 export default function Page() {
     return (
         <div>
-            <section className="relative w-full h-[81.5vh]">
+            <section className="relative w-full h-[110.5vh]">
                 <div className="absolute inset-0 h-210 w-full dark:bg-black bg-[linear-gradient(to_right,#73737350_1px,transparent_1px),linear-gradient(to_bottom,#73737350_1px,transparent_1px)] bg-size-[40px_40px]">
                     <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_40%] from-gray to-black to-75%" />
                 </div>
@@ -74,7 +74,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className="dark:bg-black py-60 px-6">
+            <section className="dark:bg-black py-10 px-6">
                 <div className="mx-auto max-w-7xl">
                     <div className="flex flex-col mb-12 items-centerjustify-between">
                         <p className="font-sans font-stretch-expanded pb-7 text-orange-400 uppercase slashed-zero">03 — Recreation</p>
@@ -93,136 +93,78 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        <div className="bg-red-700/85 border border-zinc-100/5 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Silicon Valley</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">sitcom | comedy</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-orange-200/50 border border-orange-200/50 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">The Office</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">sitcom | comedy</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-pink-500 border border-zinc-100/5 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Fight Club</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">thriller | action</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-fuchsia-700 border border-fuchsia-700 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">La La Land</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">romance | musical</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-amber-600 border border-amber-600 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Seven Deadly Sins</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">anime | fantasy</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-yellow-300/80 border border-zinc-100/5 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Please Don't Destroy: The Treasure of Foggy Mountain</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">comedy | adventure</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-[#00AEEF] border border-[#00AEEF] rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Nightcrawler</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">thriller | crime</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-emerald-500 border border-emerald-500 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Shameless</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">dramedt</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-zinc-100/5 border border-zinc-100/5 rounded-2xl">
-                            <div className="flex flex-row items-center justify-between">
-                                <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
-                                    <FaTv color="blue" className="m-3 size-8 "/>
-                                </div>
-                                <div className="p-5">
-                                    <p className="text-2xl">Batman Beyond</p>
-                                    <p className="text-sm font-sans uppercase opacity-90">superhero | action</p>
-                                </div>
-                                <div>
-                                    <FaAngleUp className="mr-8 size-5"/>
-                                </div>
-                            </div>
-                        </div>
+                        <Box bg="red-700/85" name="Silicon Valley" genre="sitcom | comedy" rating={8} />
+                        <Box bg="orange-200/50" name="The Office" genre="sitcom | comedy" rating={9} />
+                        <Box bg="pink-500" name="Fight Club" genre="thriller | action" rating={12} />
+                        <Box bg="fuchsia-700" name="La La Land" genre="romance | musical" rating={10} />
+                        <Box bg="amber-600" name="Seven Deadly Sins" genre="anime | fantasy" rating={8} />
+                        <Box bg="yellow-300/80" name="The Treasure of Foggy Mountain" genre="comedy | adventure" rating={6} />
+                        <Box bg="[#00AEEF]" name="Nightcrawler" genre="thriller | crime" rating={11} />
+                        <Box bg="emerald-500" name="Shameless" genre="dramedy" rating={10} />
+                        <Box bg="zinc-100/5" name="Batman Beyond" genre="superhero | action" rating={9} />
                     </div>
                 </div>
-
             </section>
         </div>
     );
 }
+
+/*Animations somehow:
+
+i used uh  
+ useScroll,  useTransform, "framer-motion";
+  which i sa motion/animation lib what i did was 
+
+  // We use [0.1, 0.5, 0.9] range to ensure it stays white for a bit in the middle
+  const color = useTransform(
+    scrollYProgress,
+    [0.2, 0.5, 0.8],
+    ["rgba(255,255,255,0.05)", "rgba(255,255,255,1)", "rgba(255,255,255,0.05)"],
+  ); 
+so like u see the white thing whe nu scroll it the so it ison the Y progress on the other side then i scaled the text   const scale = useTransform(
+  
+ scrollYProgress,
+    [0.2, 0.5, 0.8],
+    [0.95, 1.05, 0.95],
+  ); 
+so you see it getting big  i scalled to around the shift of the y axis to then i just added it lol
+return (
+    <motion.div
+      ref={ref}
+      style={{ scale }}
+      className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-12 items-center`}
+    >
+      <div className="flex-1 text-center md:text-left">
+        <motion.span
+          style={{ color }}
+          className="text-7xl sm:text-8xl md:text-[12rem] font-serif italic block mb-4 transition-colors duration-500"
+        >
+          {item.year}
+        </motion.span>
+        <motion.h3
+          style={{
+            opacity: useTransform(
+              scrollYProgress,
+              [0.3, 0.5, 0.7],
+              [0.3, 1, 0.3],
+            ),
+          }}
+          className="text-4xl md:text-5xl font-light tracking-tight"
+        >
+          {item.event}
+        </motion.h3>
+      </div>
+      <div className="w-px h-64 bg-gradient-to-b from-[#2563eb] to-transparent hidden md:block" />
+      <div className="flex-1" />
+    </motion.div>
+  );
+}
+
+ simple as that if u see i used an aditional tranfrom for the opacity bc i likd it to when scrolled down the above text obaclity fo down yeah and its just a matter of
+ const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+ definign the start end and end start bc it register the other item the other event as the end of the svent above it and the start of a new event as well
+ */

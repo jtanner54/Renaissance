@@ -1,28 +1,50 @@
+'use client';
+
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 export default function Page() {
     return (
-        <>
-            <div className="absolute inset-0 h-full w-full bg-[radial-gradient(circle,#73737350_1px,transparent_1px)] bg-size-[25px_25px]" />
+        <div>
+            <section className="py-30 px-5 h-[110vh]">
+                <div className="absolute inset-0 h-[110vh] w-full bg-[radial-gradient(circle,#73737350_1px,transparent_1px)] bg-size-[40px_40px]">
+                    <div className="overflow-hidden absolute inset-0 bg-radial-[at_50%_40%] from-transparent to-black to-90%" />
+                </div>
 
-            <div className="relative w-full py-30">
-                <div className="flex flex-col mx-auto max-w-5xl text-center items-center">
-                    <h1 className="text-6xl mb-12">Jack Tanner</h1>
+                <div className="relative w-full py-10">
+                    <div className="flex flex-col mx-auto max-w-5xl text-center items-center">
+                        <p className="font-sans text-orange-400 pb-10 uppercase">Thoughtful engineering. Intentional design.</p>
 
-                    <p className="mb-12 text-2xl">Tech enthusiast</p>
+                        <h1 className="font-serif text-4xl md:text-9xl sm:text-6xl mb-10">Jack
+                            <span className="italic opacity-50"> Tanner</span>
+                        </h1>
 
-                    <div className="">
-                        <Link href="#footer"
-                        className="hover:bg-orange-400 hover:border-orange-400 hover:text-white cursor-pointer bg-white border rounded-full text-black pl-7 pr-7 pt-4 pb-4 mr-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 inline-block">
-                            Get in touch
-                        </Link>
-                        <Link href="#about"
-                        className="hover:bg-orange-400/5  cursor-pointer bg-transparent border border-white/28 rounded-full text-white pl-7 pr-7 pt-4 pb-4 mr-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 inline-block">
-                            My journey
-                        </Link>
+                        <p className="text-2xl sm:text-3xl md:text-5xl font-sans pb-5 opacity-50 italic">I'm a</p>
+                        <div className="flex pb-10 font-serif text-2xl sm:text-3xl md:text-4xl">
+                            <Typewriter options={{
+                                strings: ['Tech Enthusiast', 'Software Engineer', 'Full-Stack Developer', 'Student'],
+                                autoStart: true,
+                                loop: true,
+                                deleteSpeed: 16,
+                                delay: 50,
+                                cursor: '',
+                            }} />
+                            <span className="text-orange-400">|</span>
+                        </div>
+
+                        <div className="">
+                            <Link href="#footer"
+                                className="hover:bg-orange-400 hover:border-orange-400 hover:text-white cursor-pointer bg-white border rounded-full text-black pl-9 pr-9 pt-3 pb-3 mr-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 inline-block">
+                                Get in touch
+                            </Link>
+                            <Link href="#about"
+                                className="hover:bg-orange-400/5  cursor-pointer bg-transparent border border-white/28 rounded-full text-white pl-9 pr-9 pt-3 pb-3 mr-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 inline-block">
+                                My journey
+                            </Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </>
+            </section >
+        </div >
     );
 }
