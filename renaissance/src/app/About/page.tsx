@@ -1,3 +1,5 @@
+'use client'
+
 import Box from "@/src/Components/BoxesAbout";
 
 export default function Page() {
