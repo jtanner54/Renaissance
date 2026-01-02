@@ -11,18 +11,18 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center w-full pt-40 dark:bg-white">
-                    <p className="z-10 font-sans font-stretch-expanded text-orange-400 pt-30 pb-12 uppercase tracking-wider">00 — Identity</p>
+                    <p className="z-10 font-serif    -expanded text-orange-400 pt-30 pb-12 uppercase tracking-wider">00 — Identity</p>
                     <h1 className="z-10 font-light text-6xl md:text-9xl sm:text-7xl">Who Am
                         <span className="font-serif italic opacity-50"> I?</span>
                     </h1>
                 </div>
             </section>
 
-            <section className="relative dark:bg-charcoal py-54 px-6">
+            <section className="relative dark:bg-charcoal py-20 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid md:grid-cols-2 gap-8 items-start">
+                    <div className="grid md:grid-cols-2 gap-8 items-start pb-20">
                         <div className="">
-                            <p className="z-10 pl-1.5 pb-9 font-sans font-stretch-expanded text-orange-400 uppercase tracking-wider">01 — Philosophy</p>
+                            <p className="z-10 pl-1.5 pb-9 font-serif    -expanded text-orange-400 uppercase tracking-wider">01 — Philosophy</p>
                             <h1 className="wrap-break-word font-light text-4xl md:text-7xl sm:text-5xl pb-9">Engineering
                                 <span className="text-4xl md:text-7xl sm:text-5xl font-serif italic opacity-50"> Understanding.</span>
                             </h1>
@@ -45,7 +45,7 @@ export default function Page() {
             <section className="dark:bg-black py-30 px-6">
                 <div className="max-w-5xl mx-auto items-center text-center">
                     <div className="items-center text-center">
-                        <p className="font-sans font-stretch-expanded pb-10 text-orange-400 uppercase tracking-wider">02 — Chronology</p>
+                        <p className="font-serif    -expanded pb-10 text-orange-400 uppercase tracking-wider">02 — Chronology</p>
                         <h1 className="font-serif pb-30 text-4xl sm:text-6xl md:text-8xl italic">The Path</h1>
                     </div>
                     <div className="flex flex-col md:flex-row mb-5 sm:mb-50 gap-12 items-center">
@@ -79,7 +79,7 @@ export default function Page() {
             <section className="dark:bg-black py-10 px-6">
                 <div className="mx-auto max-w-7xl">
                     <div className="flex flex-col mb-12 items-centerjustify-between">
-                        <p className="font-sans font-stretch-expanded pb-7 text-orange-400 uppercase tracking-wider">03 — Recreation</p>
+                        <p className="font-serif    -expanded pb-7 text-orange-400 uppercase tracking-wider">03 — Recreation</p>
                         <h1 className="font-serif text-4xl pb-4 md:text-6xl sm:text-5xl">Cinematic
                             <span className="italic pb-12 opacity-50"> Influence.</span>
                         </h1>

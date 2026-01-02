@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import BoxesHome from "../Components/BoxesHome";
+import Timeline from "../Components/Timeline";
 import { BiCodeAlt } from "react-icons/bi";
 import { IoSparklesOutline } from "react-icons/io5";
 import { MdOutlineRocketLaunch } from "react-icons/md";
@@ -68,31 +69,42 @@ export default function Page() {
                 </div>
             </section>
 
-            <div className="dark:bg-black py-20 "/>
+            <div className="dark:bg-black py-20 " />
 
-            <section className="dark:bg-black py-40 px-5 pt-59 md:pt-20">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            <section className="dark:bg-black py-40 px-5 pt-59 md:pt-2">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-20 items-start px-6 max-w-6xl mx-auto">
                     <div className="md:col-span-7">
-                        <p className="z-10 pl-1.5 pb-9 font-sans font-stretch-expanded text-orange-400 uppercase tracking-widest">01 — Biography</p>
+                        <p className="pl-1.5 pb-9 font-serif text-orange-400 uppercase tracking-widest">01 — Biography</p>
                         <h1 className="wrap-break-word font-serif text-4xl md:text-[105px] sm:text-5xl pb-4">
-                            Who Am 
-                            <br/>
+                            Who Am
+                            <br />
                             <span className="italic opacity-50">I Really?</span>
                         </h1>
-                        <p className="border-l-2 border-orange-400 pl-5 font-serif italic opacity-80 text-3xl">“Understanding the system matters more than memorizing the solution.”</p>
+                        <div className="space-y-8 pt-2 max-w-105rem">
+                            <p className="font-sans text-2xl">
+                                Hi! I'm <span className="font-serif font-bold">Jack Tanner</span>, a passionate American, self-taught coder. I'm a daily learner, always aiming for personal growth.
+                                Lead Architect Designer of <span className="font-serif font-bold text-orange-400"> <Link target="_blank" href="https://purrquinox.com/">Purrquinox</Link></span>.
+                            </p>
+
+                            <p className="font-sans text-2xl">
+                                I started my coding journey as a self-taught enthusiast, driven by curiosity and a passion for technology.
+                                What began as a hobby quickly evolved into pursuing a path in college as a computer scientist as I hone my skills through countless hours of practice and real-world projects.
+                            </p>
+                        </div>
                     </div>
-                    <div className="md:col-span-5">
-                        <p className="text-2xl font-serif pb-8.5">I'm Jack Tanner, a computer science student at Rose-Hulman, driven less by lectures and more by curiosity.
-                            My education doesn't stop at the syllabus—it accelerates when something breaks, behaves unexpectedly, or begs to be understood at a deeper level.
-                        </p>
-                        <p className="text-2xl font-serif opacity-50">
-                            I believe the best engineers are self-taught long before they're credentialed.
-                            I learn by building, deconstructing, and iterating—treating every system as both a tool and a puzzle.
-                            Code, to me, is not just implementation; it's a way to reason about complexity, efficiency, and truth.
-                        </p>
+                    <div className="md:col-span-5 ">
+
+                        <p className="font-serif text-white/50 uppercase tracking-widest pb-4">progress log</p>
+                        <div className="w-full h-px border-t border-white/10 pb-10" />
+
+                        <div className="relative">
+                            <div className="absolute left-0.75 top-1 bottom-1 w-px bg-white/10" />
+                            <Timeline date="2022" text="Started coding journey" />
+                            <Timeline date="2024" text="Attending Rose-Hulman" />
+                            <Timeline date="2025" text="Joined Purrquinox" />
+                        </div>
                     </div>
                 </div>
-
             </section>
         </div >
     );

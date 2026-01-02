@@ -12,7 +12,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col md:flex-row gap-10 justify-between items-center">
                 <div className="max-w-4xl">
-                    <p className="font-sans font-stretch-expanded pb-10 text-orange-400 uppercase tracking-wider">Ready To Build?</p>
+                    <p className="font-serif    -expanded pb-10 text-orange-400 uppercase tracking-wider">Ready To Build?</p>
                     <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl">
                         Thoughtful
                         <span className="italic opacity-50"> Engineering. </span>
