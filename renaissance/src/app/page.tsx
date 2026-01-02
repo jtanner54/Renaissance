@@ -4,6 +4,7 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import BoxesHome from "../Components/BoxesHome";
 import Timeline from "../Components/Timeline";
+import TechGroup from "../Components/Technologies";
 import { BiCodeAlt } from "react-icons/bi";
 import { IoSparklesOutline } from "react-icons/io5";
 import { MdOutlineRocketLaunch } from "react-icons/md";
@@ -103,6 +104,24 @@ export default function Page() {
                             <Timeline date="2024" text="Attending Rose-Hulman" />
                             <Timeline date="2025" text="Joined Purrquinox" />
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="dark:bg-black">
+                <div className="w-full h-px border-t border-white/5" />
+
+                <div className="text-center">
+                    <p className="font-serif text-orange-400 uppercase tracking-wider pt-50">02 - capabilities</p>
+                    <p className="font-serif text-5xl md:text-7xl pt-7"> Technical
+                        <span className="font-serif italic opacity-50"> Arsenal</span>
+                    </p>
+                </div>
+
+                <div className="flex flex-col items-center pt-5">
+                    <p className="text-3xl font-serif">What I know: </p>
+                    <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 pt-10">
+                        <TechGroup src="css" name="css" desc="Advanced styling including Flexbox, Grid, and CSS animations" level={5} />
                     </div>
                 </div>
             </section>
