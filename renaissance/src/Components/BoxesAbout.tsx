@@ -4,7 +4,7 @@ export default function Box({bg, name, genre, rating}: {bg: string, name: string
     console.log(bg, name);
     
     return (
-        <div style={{ backgroundColor: bg }} className={`border border-zinc-100/5 rounded-2xl`}>
+        <div style={{ backgroundColor: bg }} className={`border border-zinc-100/5 rounded-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105`}>
             <div className="flex flex-row items-center justify-between">
                 <div className="ml-4 border-gray-700/40 border rounded-2xl h-15 bg-gray-700/20">
                     <FaTv color="blue" className="m-3 size-8 " />

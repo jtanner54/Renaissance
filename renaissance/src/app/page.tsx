@@ -1,17 +1,53 @@
 'use client';
 
+import clsx from 'clsx';
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import BoxesHome from "../Components/BoxesHome";
 import Timeline from "../Components/Timeline";
 import TechGroup from "../Components/Technologies";
+import { useState } from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { IoSparklesOutline } from "react-icons/io5";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa";
 
+type TechCategory = "Frontend" | "Backend" | "Tools" | "Database & Storage";
+
+type Tech = {
+    src: string;
+    name: string;
+    desc: string;
+    level: number;
+    category: TechCategory;
+}
+
+const techInfo: Tech[] = [
+    { src: "css", name: "CSS", desc: "Advanced styling including Flexbox, Grid, and CSS animations", level: 5, category: "Frontend" },
+    { src: "ts", name: "TypeScript", desc: "Developing type-safe applications with TypeScript for improved code quality and developer experience.", level: 3, category: "Frontend" },
+    { src: "js", name: "JavaScript", desc: "Experience with modern JavaScript (ES6+) features and patterns.", level: 4, category: "Frontend" },
+    { src: "react", name: "React", desc: "Building complex, interactive UIs with React and its ecosystem including hooks, context, and state management libraries.", level: 4, category: "Frontend" },
+    { src: "html", name: "HTML", desc: "Semantic markup and accessible web development.", level: 5, category: "Frontend" },
+    { src: "tailwind", name: "Tailwind CSS", desc: "Rapid UI development using utility classes and customizing design systems.", level: 5, category: "Frontend" },
+    { src: "nodejs", name: "Node.js", desc: "Building server-side applications and APIs with JavaScript/TypeScript.", level: 3, category: "Backend" },
+    { src: "go", name: "Go", desc: "Developing high-performance microservices and APIs.", level: 2, category: "Backend" },
+    { src: "python", name: "Python", desc: "Server-side development and automation scripting.", level: 4, category: "Backend" },
+    { src: "java", name: "Java", desc: "Backend development as well as data structure implementation.", level: 5, category: "Backend" },
+    { src: "htmx", name: "REST API", desc: "Designing and implementing RESTful services following best practices.", level: 3, category: "Backend" },
+    { src: "flask", name: "Flask", desc: "Python framework for server-side logic, process requests, and creating APIs", level: 3, category: "Backend" },
+    { src: "github", name: "GitHub", desc: "Collaborative development using pull requests, issues, and project management.", level: 5, category: "Tools" },
+    { src: "git", name: "Git", desc: "Version control and collaborative development workflows.", level: 4, category: "Tools" },
+    { src: "vscode", name: "VS Code", desc: "Primary code editor with advanced extensions and customizations.", level: 4, category: "Tools" },
+    { src: "mysql", name: "MySQL", desc: "Relational database management and optimization.", level: 4, category: "Database & Storage" },
+    { src: "postgres", name: "PostgreSQL", desc: "Relational database design, optimization, and advanced queries.", level: 4, category: "Database & Storage" },
+];
+
 export default function Page() {
+    const categories: TechCategory[] = ["Frontend", "Backend", "Tools", "Database & Storage"];
+    const [activeCategory, setActiveCategory] = useState<TechCategory>("Frontend");
+    const visibleTech = techInfo.filter(tech => tech.category === activeCategory);
+
     return (
         <div>
             <section className="py-20 px-5 h-screen">
@@ -113,15 +149,28 @@ export default function Page() {
 
                 <div className="text-center">
                     <p className="font-serif text-orange-400 uppercase tracking-wider pt-50">02 - capabilities</p>
-                    <p className="font-serif text-5xl md:text-7xl pt-7"> Technical
+                    <p className="font-serif text-5xl md:text-7xl pt-7 pb-10"> Technical
                         <span className="font-serif italic opacity-50"> Arsenal</span>
                     </p>
                 </div>
 
+                {/*duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105*/}
+                <div className="flex justify-center bg-white/5 border border-white/10 rounded-2xl mx-auto w-1/2">
+                    {categories.map((category) => (
+                        <button key={category} onClick={() => setActiveCategory(category)}
+                            className={clsx(
+                                "p-3 m-3 text-2xl font-serif tracking-wider rounded-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105",
+                                activeCategory === category ? "bg-linear-to-r from-orange-400 via-yellow-500 to-red-700" : "border-white/5 bg-white/5 text-white hover:bg-white/5")}>
+                            {category}
+                        </button>)
+                    )}
+                </div>
+
                 <div className="flex flex-col items-center pt-5">
-                    <p className="text-3xl font-serif">What I know: </p>
-                    <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 pt-10">
-                        <TechGroup src="css" name="css" desc="Advanced styling including Flexbox, Grid, and CSS animations" level={5} />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
+                        {visibleTech.map(tech => (
+                            <TechGroup key={tech.name} {...tech} />
+                        ))}
                     </div>
                 </div>
             </section>
