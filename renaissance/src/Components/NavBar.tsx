@@ -12,7 +12,7 @@ export default function NavBar() {
                 <ul className="flex p-3 dark:bg-black border border-white/7 rounded-full gap-3 overflow-x-auto scrollbar-hide">
                     <NavBoxes icon={IoHomeOutline} text="Home" href="/" />
                     <NavBoxes icon={IoIosInformationCircleOutline} text="About" href="/About" />
-                    <NavBoxes icon={FaWrench} text="Tech" href="/Tech" />
+                    <NavBoxes icon={FaWrench} text="Tech" href="/#tech" />
                 </ul>
             </nav>
         </header>

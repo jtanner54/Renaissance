@@ -39,8 +39,8 @@ const techInfo: Tech[] = [
     { src: "github", name: "GitHub", desc: "Collaborative development using pull requests, issues, and project management.", level: 5, category: "Tools" },
     { src: "git", name: "Git", desc: "Version control and collaborative development workflows.", level: 4, category: "Tools" },
     { src: "vscode", name: "VS Code", desc: "Primary code editor with advanced extensions and customizations.", level: 4, category: "Tools" },
-    { src: "mysql", name: "MySQL", desc: "Relational database management and optimization.", level: 4, category: "Database & Storage" },
-    { src: "postgres", name: "PostgreSQL", desc: "Relational database design, optimization, and advanced queries.", level: 4, category: "Database & Storage" },
+    { src: "mysql", name: "MySQL", desc: "Relational database management and optimization.", level: 3, category: "Database & Storage" },
+    { src: "postgres", name: "PostgreSQL", desc: "Relational database design, optimization, and advanced queries.", level: 3, category: "Database & Storage" },
 ];
 
 export default function Page() {
@@ -144,7 +144,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="dark:bg-black">
+            <section id="tech" className="dark:bg-black">
                 <div className="w-full h-px border-t border-white/5" />
 
                 <div className="text-center">
